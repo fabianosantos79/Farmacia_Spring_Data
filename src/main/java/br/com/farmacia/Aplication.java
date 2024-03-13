@@ -44,8 +44,13 @@ public class Aplication implements CommandLineRunner {
 //        fabricanteRepository.save(fabricante);
 //        produtoRepository.save(produto);
 
+
 //        produtoService.atualizarDescricao();
 
-        produtoService.listarProdutos();
+//        produtoService.listarProdutos();
+
+//        produtoService.cadastrar();
+
+        produtoService.deletar();
     }
 }

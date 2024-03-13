@@ -12,6 +12,20 @@ public class ProdutoService {
         this.produtoRepository = produtoRepository;
     }
 
+    public void cadastrar(){
+        Produto produto2 = new Produto();
+        produto2.setDescricao("Contra Azia");
+        produto2.setNome("Sal de Frutas");
+        produto2.setPreco(2.35);
+        produtoRepository.save(produto2);
+
+        Produto produto3 = new Produto();
+        produto3.setDescricao("Para dores musculares");
+        produto3.setNome("Gelol");
+        produto3.setPreco(104.97);
+        produtoRepository.save(produto3);
+    }
+
     public void atualizarDescricao(){
         Produto produto = new Produto();
         produto.setId(1);
@@ -24,5 +38,10 @@ public class ProdutoService {
     public void listarProdutos(){
         Iterable<Produto> produtos = produtoRepository.findAll();
         produtos.forEach(produto -> System.out.println(produto));
+    }
+
+    public void deletar(){
+        produtoRepository.deleteById(3);
+        System.out.println("Deletado");
     }
 }
