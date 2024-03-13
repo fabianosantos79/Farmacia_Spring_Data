@@ -11,6 +11,8 @@ public class Produto {
     private String nome;
     private String descricao;
     private double preco;
+    @ManyToOne
+    private Fabricante fabricante;
 
     public int getId() {
         return id;
