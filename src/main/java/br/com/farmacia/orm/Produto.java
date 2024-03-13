@@ -64,4 +64,15 @@ public class Produto {
     public void setFabricante(Fabricante fabricante) {
         this.fabricante = fabricante;
     }
+
+    @Override
+    public String toString() {
+        return "Produto{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", descricao='" + descricao + '\'' +
+                ", preco=" + preco +
+                ", fabricante=" + fabricante +
+                '}';
+    }
 }

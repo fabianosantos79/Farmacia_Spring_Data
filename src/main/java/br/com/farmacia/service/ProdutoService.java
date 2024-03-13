@@ -20,4 +20,9 @@ public class ProdutoService {
         produto.setPreco(14.50);
         produtoRepository.save(produto);
     }
+
+    public void listarProdutos(){
+        Iterable<Produto> produtos = produtoRepository.findAll();
+        produtos.forEach(produto -> System.out.println(produto));
+    }
 }
