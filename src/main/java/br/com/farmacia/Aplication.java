@@ -51,6 +51,8 @@ public class Aplication implements CommandLineRunner {
 
 //        produtoService.cadastrar();
 
-        produtoService.deletar();
+//        produtoService.deletar();
+
+        produtoService.findIdNome();
     }
 }

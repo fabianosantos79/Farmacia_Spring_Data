@@ -4,6 +4,8 @@ import br.com.farmacia.orm.Produto;
 import br.com.farmacia.repository.ProdutoRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ProdutoService {
     private final ProdutoRepository produtoRepository;
@@ -43,5 +45,10 @@ public class ProdutoService {
     public void deletar(){
         produtoRepository.deleteById(3);
         System.out.println("Deletado");
+    }
+
+    public void findIdNome(){
+        List<Produto> list = produtoRepository.findIdNome(2, "Sal de Frutas");
+        list.forEach(System.out::println);
     }
 }
