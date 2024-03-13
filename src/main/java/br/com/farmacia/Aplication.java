@@ -1,9 +1,9 @@
 package br.com.farmacia;
 
-import br.com.farmacia.orm.Fabricante;
-import br.com.farmacia.orm.Produto;
-import br.com.farmacia.repository.FabricanteRepository;
-import br.com.farmacia.repository.ProdutoRepository;
+//import br.com.farmacia.orm.Fabricante;
+//import br.com.farmacia.orm.Produto;
+//import br.com.farmacia.repository.FabricanteRepository;
+//import br.com.farmacia.repository.ProdutoRepository;
 import br.com.farmacia.service.ProdutoService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -53,6 +53,6 @@ public class Aplication implements CommandLineRunner {
 
 //        produtoService.deletar();
 
-        produtoService.findIdNome();
+//        produtoService.findIdNome();
     }
 }
